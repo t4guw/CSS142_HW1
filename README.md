@@ -106,7 +106,7 @@ When you feel like you have a working solution, replace the HW_WarmUp.java file 
 Execute the following commands on GitBash:
 ```
 cd Desktop/
-git add HW_WarUp.java
+git add HW_WarmUp.java
 git commit -m "My submission"
 git push
 ```
