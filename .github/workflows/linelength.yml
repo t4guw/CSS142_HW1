@@ -9,6 +9,8 @@ jobs:
         shell: bash
         working-directory: .
     steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
     - run: |
       longlines=0
       for file in $(find . -iname "*.java"); do 
