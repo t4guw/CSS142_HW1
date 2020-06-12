@@ -13,5 +13,22 @@ jobs:
     - name: Get repository contents
       uses: actions/checkout@v2
     - name: Check line length
-      run: longlines=0; for file in $(find . -iname "*.java"); do lineno=0; echo "Processing file: $file"; cat $file | while read -r line; do ((lineno=lineno+1)); count=$(echo $line | wc -m); if [[ $count -gt 80 ]]; then echo "Line $lineno in $file has $count characters."; ((longlines=longlines+1)); fi; done; done; if [[ $longlines -gt 0 ]]; then echo "You have long lines in your code!"; exit 1; fi
+      run: |
+        longlines=0
+        for file in $(find . -iname "*.java"); do 
+          lineno=0
+          echo "Processing file: $file"
+          cat $file | while read -r line; do 
+            ((lineno=lineno+1))
+            count=$(echo $line | wc -m)
+            if [[ $count -gt 80 ]]; then 
+              echo "Line $lineno in $file has $count characters."
+              ((longlines=longlines+1))
+            fi
+          done
+        done
+        if [[ $longlines -gt 0 ]]; then 
+          echo "You have long lines in your code!"
+          exit 1
+        fi
 
