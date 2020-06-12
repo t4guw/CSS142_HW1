@@ -4,6 +4,10 @@ on: push
 jobs:
   parse-line-length:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: .
     steps:
     - run: |
       longlines=0
