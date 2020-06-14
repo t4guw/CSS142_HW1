@@ -1,31 +1,39 @@
-# CSS142_HW1
+# CSS142 HW1: Branching
 
 ## Summary
+
 This is a brief warm-up exercise regarding branching.
 
 ## Work Item
+
 Given the following variable declarations and main method skeleton driver below in "Main Method
-Skeleton Driver", code up “if” statements that correspond with each of the "Questions" below. (A
-driver is a program whose purpose is to run other code, in this case, the "if" statements.) Compile
-and execute your code to prove it’s correct. Use a Scanner for reading in from the keyboard. Submit
-the single Java file (i.e., “.java” text file) that contains your code:
-Please submit only a single Java file via Canvas. Do not email your instructor your work.
-Name your Java file HW_WarmUp.java. You must name your file this way.
-Note that by requiring you name your Java file HW_WarmUp.java, it means that the public class
-that is in that file has to be named HW_WarmUp .
+Skeleton Driver", code up "if" statements that correspond with each of the "Questions" below. (A
+driver is a program whose purpose is to run other code, in this case, the "if" statements.) 
+
+Compile and execute your code to prove it’s correct. Use a Scanner for reading in from the keyboard. 
+
+For assingment submission, you will add all your code to this GitHub 
+repository. Your instructors will grade the code files in this repository; 
+there is no need to submit anything via Canvas or email.
+
+There is a Java file in this repository called `HW_WarmUp.java`. This 
+is the file which should contain all of your coded solutions; do not 
+rename this file or create other class files for this assignment.
+
 There is no flow chart for this assignment.
 
 ## Questions
+
 1. Prompt the user with: "Enter the number". Determine if it is negative and if so, print: "The
 number is negative." Use a Scanner to collect the input, and report to the console if the variable
-called “number” is negative using System.out.println().
+called `number` is negative using `System.out.println()`.
 2. Prompt the user with: "Enter a second number". Determine if the number is zero and if so, print:
 "The number is zero." Use a Scanner to get the input, and report if the number is zero next.
 You can reuse the variables "number" and "keyboard" here.
 3. Continue to use Scanner for input. Prompt the user with: "Enter a third number, a double, for the
 class average." Determine if the class average is a passing grade, and if so, print: "A passing
-grade", and print to the console otherwise if not (not passing is if the class average was below a
-65).
+grade", and print to the console otherwise if not. Not passing is if the class average was below a
+65.
 4. Prompt the user with: "Is the answer the user reported true? Enter a Boolean value." Store the
 value in the variable called "answer". Let the user know if the value in the variable “answer” is
 true by printing an appropriate message to the console.
@@ -63,10 +71,12 @@ That is, complete the function “public static int max(int a, int b) {“ so th
 or b using an “if” statement.
 13. Ask the user for two integers using a Scanner and report the largest and smallest values using
 the max function you just built. Consider the following output:
+```
 //sample output for problem 13
 Enter two integers: 2 14
 Largest is 14
 Smallest is 2
+```
 
 ## Grading
 Each item is given zero, half or 1 point. For this assignment, points are awarded strictly based on
@@ -78,11 +88,13 @@ Always compile and run/test your code after each incremental change.
 Never write a whole program first and then compile and test later.
 
 ## Initial Setup
-Accept the assignment: https://classroom.github.com/a/RzC1asr_
+
+Accept the assignment with [this link](https://classroom.github.com/a/RzC1asr_).
+
 Go to your assignment repository.
 
 Clone the starter code onto your desktop with GitBash. You can get GitBash here: https://gitforwindows.org/
-To configure 
+
 Change directory to your desktop and clone your repository by executing each of these commands separately.
 ```
 cd Desktop/
@@ -93,27 +105,30 @@ You can find the HTTPS URL here:
 
 You may be prompted for your login information so enter that in.
 
-Start a new project on IntelliJ and name it how ever you want. 
-Create a new directory name "Tests" and mark the directory as "Test Sources Root"
-![Demo](ProjectDemo.gif)
-
-Drag and drop the HW_WarmUp.java file from your downloaded repository on your Desktop, to the src folder in your project.
-Drag and drop the HW_WarmUpTest.java file from your downlaoded repository on your Desktopm to the Test folder you created in your project.
+Now, open up your preferred IDE, and open the cloned GitHub folder as 
+a new project. Once you have opened the project in your IDE, 
+you can edit the [`HW_WarmUp.java`](./HW_WarmUp.java) 
+file and implement the solutions required for this assignment.
 
 ## Submitting your assignment
-When you feel like you have a working solution, replace the HW_WarmUp.java file you worked on in your project back into the repository you cloned during setup. 
+
+When you feel like you have completed a significant task for your assignment, you should commit those changes and push them to Github.
 
 Execute the following commands on GitBash:
-```
-cd Desktop/
+
+```console
+cd path/to/cloned/project           # Replace this path with the path to your GitHub repository
 git add HW_WarmUp.java
-git commit -m "My submission"
+git commit -m "Implement things"    # Write a meaningful commit message so you can understand what changes you made
 git push
 ```
 
+You can push commits to your project anytime you like; it's a good practice to commit early and often, and push your commits to your GitHub repository to get feedback from the automated testing in the repository.
+
+## Credits
 
 About this Document
 By Rob Nash, et al., January 2016, with minor edits by Johnny Lin, last December 2017.
 
 GitHub Submissions
-By David Liu, May 2020
+By David Liu and Lizzy Presland, Spring 2020
