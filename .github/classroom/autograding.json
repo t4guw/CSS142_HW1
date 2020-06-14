@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Question 1: Negative number",
+      "setup": "javac *.java",
+      "run": "echo \"-3 0 38.3 true 48 94.9 83.8 B 2 14\" | java HW_WarmUp | grep \"The number is negative.\" | wc -l",
+      "input": "",
+      "output": "1",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 0.5
+    },
+
+    {
+      "name": "Question 1: Non-negative number",
+      "setup": "javac *.java",
+      "run": "echo \"1 0 38.3 true 48 94.9 83.8 B 2 14\" | java HW_WarmUp | grep \"The number is negative.\" | wc -l",
+      "input": "",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 0.5
+    }
+
+  ]
+}
