@@ -7,7 +7,8 @@ public class HW_WarmUp {
 //TODO 1
 //        System.out.println("Enter the number for TODO 1");
 //        int number = keyboard.nextInt();
-//        if( the number is negative ) { //you must fix this pseudocode before you can compile it
+//NOTE: you must fix this pseudocode before you can compile it
+//        if( the number is negative ) { 
 //            System.out.println("The number is negative");
 //TODO 2
 //        number = ?;
